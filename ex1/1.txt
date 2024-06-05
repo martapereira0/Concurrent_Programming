@@ -1,0 +1,24 @@
+// implementação do algoritmo de Hyman's em CCS
+B1f := b1wf?.B1f + b1rf!.B1f + b1wt?.B1t
+B1t := b1wt?.B1t + b1wf?.B1f + b1rt!.B1t
+
+B2f := b2wf?.B2f + b2rf!.B2f + b2wt?.B2t
+B2t := b2wt?.B2t + b2wf?.B2f + b2rt!.B2t
+
+K1 := kw1?.K1 + kw2?.K2 + kr1!.K1
+K2 := kw2?.K2 + kw1?.K1 + kr2!.K2
+
+P1 := b1wt!.P11
+P11 := kr1?.P14 + kr2?.P12
+P12 := b2rf?.P13 + b2rt?.P12 
+P13 := kw1!.P11 
+P14 := enter1.exit1.b1wf!.P1
+
+P2 := b2wt!.P21
+P21 := kr2?.P24 + kr1?.P22
+P22 := b1rf?.P23 + b1rt?.P22 
+P23 := kw2!.P21
+P24 := enter2.exit2.b2wf!.P2
+
+P := (P1|P2|K1|B1f|B2f) \ {b1rf, b2rf, b1rt, b2rt, b1wf, b2wf, b1wt, b2wt, kr1, kr2, kw1, kw2} 
+P
