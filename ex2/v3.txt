@@ -1,0 +1,105 @@
+F1f := fome1wf?.F1f + fome1rf!.F1f + fome1wt?.F1t
+F1t := fome1wt?.F1t + fome1wf?.F1f + fome1rt!.F1t
+
+F2f := fome2wf?.F2f + fome2rf!.F2f + fome2wt?.F2t
+F2t := fome2wt?.F2t + fome2wf?.F2f + fome2rt!.F2t
+
+F3f := fome3wf?.F3f + fome3rf!.F3f + fome3wt?.F3t
+F3t := fome3wt?.F3t + fome3wf?.F3f + fome3rt!.F3t
+
+F4f := fome4wf?.F4f + fome4rf!.F4f + fome4wt?.F4t
+F4t := fome4wt?.F4t + fome4wf?.F4f + fome4rt!.F4t
+
+F5f := fome5wf?.F5f + fome5rf!.F5f + fome5wt?.F5t
+F5t := fome5wt?.F5t + fome5wf?.F5f + fome5rt!.F5t
+
+Ka1 := kaw1?.Ka1 + kaw2?.Ka2 + kar1!.Ka1
+Ka2 := kaw2?.Ka2 + kaw1?.Ka1 + kar2!.Ka2
+
+Kb2 := kbw2?.Kb2 + kbw3?.Kb3 + kbr2!.Kb2
+Kb3 := kbw3?.Kb3 + kbw2?.Kb2 + kbr3!.Kb3
+
+Kc3 := kcw3?.Kc3 + kcw4?.Kc4 + kcr3!.Kc3
+Kc4 := kcw4?.Kc4 + kcw3?.Kc3 + kcr4!.Kc4
+
+Kd4 := kdw4?.Kd4 + kdw5?.Kd5 + kdr4!.Kd4
+Kd5 := kdw5?.Kd5 + kdw4?.Kd4 + kdr5!.Kd5
+
+Ke5 := kew5?.Ke5 + kew1?.Ke1 + ker5!.Ke5
+Ke1 := kew1?.Ke1 + kew5?.Ke5 + ker1!.Ke1
+
+T0 := tw0?.T0 + tw1?.T1 + tr0!. T0
+T1 := tw1?.T1 + tw0?.T0 + tr1!.T2
+
+P1 := conversation1.P111
+P111 := tr0?.P112 + tr1?.P111
+P112 := tw1!.grab_sushi_tray.fome1wt!.P11
+P11 := kar1?.P14 + kar2?.P12
+P12 := fome2rf?.P13 + fome2rt?.P12
+P13 := kaw1!.P11
+P14 := take_sticka.P15 
+P15 := ker1?.P18 + ker2?.P16
+P16 := fome5rf?.P17 + fome5rt?.P16
+P17 := kew1!.P15
+P18 := take_sticke.return_sushi_tray.P19
+P19 := tw0!.P110
+P110 := eat.fome1wf!.P1
+
+P2 := conversation2.P211
+P211 := tr0?.P212 + tr1?.P211
+P212 := tw1!.grab_sushi_tray.fome2wt!.P21
+P21 := kbr2?.P24 + kbr3?.P22
+P22 := fome3rf?.P23 + fome3rt?.P22
+P23 := kbw2!.P21
+P24 := take_stickb.P25 
+P25 := kar2?.P28 + kar3?.P26
+P26 := fome1rf?.P27 + fome1rt?.P26
+P27 := kaw2!.P25
+P28 := take_sticka.return_sushi_tray.P29
+P29 := tw0!.P210
+P210 := eat.fome2wf!.P2
+
+P3 := conversation3.P311
+P311 := tr0?.P312 + tr1?.P311
+P312 := tw1!.grab_sushi_tray.fome3wt!.P31
+P31 := kcr3?.P14 + kcr4?.P32
+P32 := fome4rf?.P33 + fome4rt?.P32
+P33 := kcw3!.P31
+P34 := take_stickc.P35 
+P35 := kbr2?.P38 + kbr3?.P36
+P36 := fome2rf?.P37 + fome2rt?.P36
+P37 := kbw3!.P25
+P38 := take_stickb. return_sushi_tray.P39
+P39 := tw0!.P310
+P310 := eat.fome3wf!.P3
+
+P4 := conversation4.P411
+P411 := tr0?.P412 + tr1?.P411
+P412 := tw1!.grab_sushi_tray.fome4wt!.P41
+P41 := kdr4?.P44 + kdr5?.P42
+P42 := fome5rf?.P43 + fome5rt?.P42
+P43 := kdw4!.P41
+P44 := take_stickd.P45 
+P45 := kcr3?.P48 + kcr4?.P46
+P46 := fome3rf?.P47 + fome3rt?.P46
+P47 := kcw4!.P45
+P48 := take_stickc.return_sushi_tray.P49
+P49 := tw0!.P410
+P410 := eat.fome4wf!.P4
+
+P5 := conversation5.P511
+P511 := tr0?.P512 + tr1?.P511
+P512 := tw1!.grab_sushi_tray.fome5wt!.P51
+P51 := ker5?.P54 + ker1?.P52
+P52 := fome1rf?.P53 + fome1rt?.P52
+P53 := kew5!.P51
+P54 := take_sticke.P55 
+P55 := kdr4?.P58 + kdr5?.P56
+P56 := fome4rf?.P57 + fome4rt?.P56
+P57 := kdw5!.P55
+P58 := take_stickd.return_sushi_tray.P59
+P59 := tw0!.P510
+P510 := eat.fome5wf!.P5
+
+P := (P1|P2|P3|P4|P5)
+P
