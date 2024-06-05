@@ -13,3 +13,6 @@ Por questões de organização, implementamos o algoritmo de Hyman's do exercíc
 
 Em relação à alínea 2 do exercício 2, este encontra-se explicado no relatório.
 
+Trabalho feito por:
+- Marta Pereira
+- Biana Oliveira
